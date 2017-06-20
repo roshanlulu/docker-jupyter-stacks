@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  jupyter:
+    build:
+        context: .
+    command: jupyter-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home/jovyan
